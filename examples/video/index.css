@@ -1,0 +1,40 @@
+#video {
+  border: 2px solid gray;
+}
+p {
+  display: flex;
+  align-items: center;
+}
+p button {
+  font-size: 18px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.dialog {
+  display: none;
+  position: fixed;
+  left: 0; 
+  top: 0;
+  background: rgba(0, 0, 0, .7);
+  width: 100%;
+  height: 100%;
+}
+.dialog section {
+  width: 640px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+.dialog section > button {
+  display: block;
+  font-size: 18px;
+  padding: 2px 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draw Examples</title>
+  <link rel="stylesheet" href="../../dist/theme/draw.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <video id="video" controls>
+    <source src="./video.mp4">
+  </video>
+  <p>
+    <button id="screenshotBtn">截屏</button>
+    <span>截屏的图片：</span>
+  </p>
+  <div class="dialog">
+    <section>
+      <div id="drawBox"></div>
+      <button id="saveBtn">保存</button>
+    </section>
+  </div>
+  <img id="preview" src="">
+  <canvas id="screenshotCanvas" width="640" height="368" style="display:none;"></canvas>
+
+  <script src="../../dist/draw.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

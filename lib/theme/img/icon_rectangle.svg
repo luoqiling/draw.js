@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="智能校对" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="7_图片标注_hover效果" transform="translate(-945.000000, -289.000000)">
+            <g id="Group-2" transform="translate(825.000000, 289.000000)">
+                <g id="icon_rectangle" transform="translate(120.000000, 0.000000)">
+                    <g id="Rectangle">
+                        <rect fill="#D8D8D8" opacity="0" x="0" y="0" width="30" height="30"></rect>
+                        <path d="M8,8 L8,22 L22,22 L22,8 L8,8 Z M6,6 L24,6 L24,24 L6,24 L6,6 Z" fill="#F00000" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

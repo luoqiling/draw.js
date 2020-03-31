@@ -1,0 +1,219 @@
+@import './mixin.scss';
+
+.drawarea {
+  &-board {
+    position: relative;
+    user-select: none;
+
+    &.line {
+      cursor: url('./img/icon_line_rotate.png'), pointer;
+    }
+  
+    &.eraser {
+      cursor: url('./img/icon_eraser_rotate.png'), pointer;
+    }
+
+    img {
+      display: block;
+    }
+
+    canvas {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &-canvas {
+    z-index: 1;
+  }
+  
+  &-canvas-preview {
+    z-index: 2;
+    display: none;
+  }
+
+  &-tool {
+    @include clearfix();
+
+    button, &-color, &-fontSize {
+      float: left;
+      margin-left: 5px;
+      margin-right: 5px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    button {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      background-color: transparent;
+      font-size: 0;
+      border: 0;
+      outline: none;
+
+      &.active {
+        background-color: #e2efff;
+      }
+    }
+
+    &-color, &-fontSize {
+      margin-top: 5px;
+      border: 1px solid #DDD;
+    }
+
+    &-color {
+      width: 29px;
+      height: 29px;
+    }
+
+    &-fontSize {
+      width: 50px;
+      height: 30px;
+      outline: none;
+      padding: 0;
+    }
+
+    &-line {
+      background-image: url('./img/icon_line.png');
+    }
+  
+    &-eraser {
+      background-image: url('./img/icon_eraser.png');
+    }
+  
+    &-circle {
+      background-image: url('./img/icon_circle.png');
+    }
+  
+    &-rectangle {
+      background-image: url('./img/icon_rectangle.svg');
+    }
+  
+    &-textarea {
+      background-image: url('./img/icon_textarea.svg');
+    }
+  }
+
+  &-tool-color {
+    & > div {
+      display: none;
+      width: 320px;
+      height: 240px;
+      padding: 15px 0 0 15px;
+      box-sizing: border-box;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,.12), 0 2px 5px rgba(0,0,0,.16);
+      overflow-y: scroll;
+      position: absolute;
+      left: 0;
+      bottom: -240px;
+      z-index: 100;
+      &.show {
+        display: block;
+      }
+
+      & > div {
+        width: 40px;
+        margin: 0 10px 10px 0;
+        float: left;
+      }
+    }
+
+    span {
+      display: block;
+      box-sizing: border-box;
+      width: 40px;
+      height: 24px;
+      cursor: pointer;
+      margin-bottom: 1px;
+      overflow: hidden;
+      border-radius: 2px 2px 0 0;
+      text-align: center;
+      &.white {
+        border: 1px solid #DDD;
+      }
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: rgb(255, 255, 255);
+        display: none;
+      }
+      &.active {
+        svg {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  &-textarea {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+
+    &.show {
+      display: block;
+    }
+
+    &-box{
+      position: absolute;
+      min-width: 60px;
+      padding: 1px;
+      outline: none;
+      z-index: 4;
+      cursor: move;
+    }
+
+    button {
+      font-size: 0;
+      border: 0;
+      outline: none;
+      position: absolute;
+      right: -10px;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      z-index: 3;
+    }
+
+    &-text {
+      position: relative;
+      padding: 11px 10px 10px 11px;
+      outline: none;
+      font-family: 'MicrosoftYaHei';
+      font-weight: 400;
+      cursor: text;
+      z-index: 2;
+    }
+
+    &-border {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 1px dashed #ff0000;
+      z-index: 1;
+    }
+
+    &-sure {
+      top: -10px;
+      background-image: url('./img/icon_sure.svg');
+    }
+
+    &-cancel {
+      bottom: -10px;
+      background-image: url('./img/icon_cancel.svg');
+    }
+  }
+}

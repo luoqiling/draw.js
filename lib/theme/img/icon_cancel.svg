@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_delete</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="10" cy="10" r="10"></circle>
+        <filter x="-32.5%" y="-32.5%" width="165.0%" height="165.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="智能校对" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="7_图片标注_hover效果" transform="translate(-957.000000, -402.000000)">
+            <g id="icon_delete" transform="translate(957.000000, 402.000000)">
+                <g>
+                    <rect id="Rectangle" fill="#D8D8D8" opacity="0" x="0" y="0" width="30" height="30"></rect>
+                    <g id="Group-4" transform="translate(5.000000, 5.000000)">
+                        <g id="Oval">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use stroke="#F02900" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="icon_tick" transform="translate(9.853553, 10.361728) rotate(-45.000000) translate(-9.853553, -10.361728) translate(3.853553, 4.861728)" fill="#F02900" fill-rule="nonzero">
+                            <g transform="translate(6.060660, 5.368272) rotate(-270.000000) translate(-6.060660, -5.368272) translate(1.060660, -0.131728)" id="Line-3">
+                                <path d="M5.83578644,9.41421356 C5.83578644,9.82842712 5.5,10.1642136 5.08578644,10.1642136 C4.67157288,10.1642136 4.33578644,9.82842712 4.33578644,9.41421356 L4.33578644,1.41421356 C4.33578644,1 4.67157288,0.664213562 5.08578644,0.664213562 C5.5,0.664213562 5.83578644,1 5.83578644,1.41421356 L5.83578644,9.41421356 Z"></path>
+                                <path d="M5.83578644,9.41421356 C5.83578644,9.82842712 5.5,10.1642136 5.08578644,10.1642136 C4.67157288,10.1642136 4.33578644,9.82842712 4.33578644,9.41421356 L4.33578644,1.41421356 C4.33578644,1 4.67157288,0.664213562 5.08578644,0.664213562 C5.5,0.664213562 5.83578644,1 5.83578644,1.41421356 L5.83578644,9.41421356 Z" transform="translate(5.085786, 5.414214) scale(1, -1) rotate(-270.000000) translate(-5.085786, -5.414214) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
