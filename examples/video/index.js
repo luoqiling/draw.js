@@ -12,7 +12,7 @@ $screenshotBtn.onclick = function(){
   $video.pause()
   $screenshotCanvas.getContext('2d').drawImage($video, 0, 0, $video.videoWidth, $video.videoHeight)
   draw.input($screenshotCanvas.toDataURL())
-  $dialog.style.display = 'block'
+  $dialog.className = 'dialog show'
 }
 
 $saveBtn.onclick = function(){
@@ -20,7 +20,7 @@ $saveBtn.onclick = function(){
     const $img = document.querySelector('#preview')
     $img.style.display = 'block'
     $img.src = data
-    $dialog.style.display = 'none'
+    $dialog.className = 'dialog'
     $video.play()
   })
 }
