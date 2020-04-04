@@ -1,11 +1,15 @@
 # draw
 
 ## 简介
+
 绘画工具：直线、圆形、矩形、橡皮擦、文本框、拾色器
 
-[在线预览](https://luobin01.github.io/draw/examples/video/)
+## 预览
+
+[请狠狠地点这里](https://luobin01.github.io/draw/examples/video/)
 
 ## 命令行
+
 ````
 # 本地运行
 yarn serve
