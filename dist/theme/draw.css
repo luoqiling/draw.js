@@ -2,43 +2,34 @@
   position: relative;
   user-select: none;
 }
-
 .drawarea-board.line {
   cursor: url("./img/icon_line_rotate.png"), pointer;
 }
-
 .drawarea-board.eraser {
   cursor: url("./img/icon_eraser_rotate.png"), pointer;
 }
-
 .drawarea-board img {
   display: block;
 }
-
 .drawarea-board canvas {
   position: absolute;
   left: 0;
   top: 0;
 }
-
 .drawarea-canvas {
   z-index: 1;
 }
-
 .drawarea-canvas-preview {
   z-index: 2;
   display: none;
 }
-
 .drawarea-tool:before, .drawarea-tool:after {
   display: table;
   content: "";
 }
-
 .drawarea-tool:after {
   clear: both;
 }
-
 .drawarea-tool button, .drawarea-tool-color, .drawarea-tool-fontSize {
   float: left;
   margin-left: 5px;
@@ -46,7 +37,6 @@
   position: relative;
   cursor: pointer;
 }
-
 .drawarea-tool button {
   width: 40px;
   height: 40px;
@@ -59,48 +49,38 @@
   border: 0;
   outline: none;
 }
-
 .drawarea-tool button.active {
   background-color: #e2efff;
 }
-
 .drawarea-tool-color, .drawarea-tool-fontSize {
   margin-top: 5px;
   border: 1px solid #DDD;
 }
-
 .drawarea-tool-color {
   width: 29px;
   height: 29px;
 }
-
 .drawarea-tool-fontSize {
   width: 50px;
   height: 30px;
   outline: none;
   padding: 0;
 }
-
 .drawarea-tool-line {
   background-image: url("./img/icon_line.png");
 }
-
 .drawarea-tool-eraser {
   background-image: url("./img/icon_eraser.png");
 }
-
 .drawarea-tool-circle {
   background-image: url("./img/icon_circle.png");
 }
-
 .drawarea-tool-rectangle {
   background-image: url("./img/icon_rectangle.svg");
 }
-
 .drawarea-tool-textarea {
   background-image: url("./img/icon_textarea.svg");
 }
-
 .drawarea-tool-color > div {
   display: none;
   width: 320px;
@@ -115,17 +95,14 @@
   bottom: -240px;
   z-index: 100;
 }
-
 .drawarea-tool-color > div.show {
   display: block;
 }
-
 .drawarea-tool-color > div > div {
   width: 40px;
   margin: 0 10px 10px 0;
   float: left;
 }
-
 .drawarea-tool-color span {
   display: block;
   box-sizing: border-box;
@@ -137,22 +114,18 @@
   border-radius: 2px 2px 0 0;
   text-align: center;
 }
-
 .drawarea-tool-color span.white {
   border: 1px solid #DDD;
 }
-
 .drawarea-tool-color span svg {
   width: 24px;
   height: 24px;
   fill: white;
   display: none;
 }
-
 .drawarea-tool-color span.active svg {
   display: inline-block;
 }
-
 .drawarea-textarea {
   display: none;
   position: absolute;
@@ -160,11 +133,9 @@
   top: 0;
   z-index: 3;
 }
-
 .drawarea-textarea.show {
   display: block;
 }
-
 .drawarea-textarea-box {
   position: absolute;
   min-width: 60px;
@@ -173,7 +144,6 @@
   z-index: 4;
   cursor: move;
 }
-
 .drawarea-textarea button {
   font-size: 0;
   border: 0;
@@ -188,17 +158,15 @@
   background-color: transparent;
   z-index: 3;
 }
-
 .drawarea-textarea-text {
   position: relative;
   padding: 11px 10px 10px 11px;
   outline: none;
-  font-family: 'MicrosoftYaHei';
+  font-family: "MicrosoftYaHei";
   font-weight: 400;
   cursor: text;
   z-index: 2;
 }
-
 .drawarea-textarea-border {
   position: absolute;
   top: 0;
@@ -208,12 +176,10 @@
   border: 1px dashed #ff0000;
   z-index: 1;
 }
-
 .drawarea-textarea-sure {
   top: -10px;
   background-image: url("./img/icon_sure.svg");
 }
-
 .drawarea-textarea-cancel {
   bottom: -10px;
   background-image: url("./img/icon_cancel.svg");
