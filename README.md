@@ -6,7 +6,7 @@
 
 ## 预览
 
-[请狠狠地点这里](https://luobin01.github.io/draw/examples/video/)
+[请狠狠地点这里](https://luoqiling.github.io/draw/examples/video/)
 
 ## 示例
 
