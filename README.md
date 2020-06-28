@@ -1,4 +1,4 @@
-# draw
+# draw.js
 
 ## 简介
 
@@ -6,7 +6,7 @@
 
 ## 预览
 
-[请狠狠地点这里](https://luoqiling.github.io/draw/examples/video/)
+[请狠狠地点这里](https://luoqiling.github.io/draw.js/examples/video/)
 
 ## 示例
 
